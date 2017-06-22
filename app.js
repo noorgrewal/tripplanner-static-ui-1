@@ -44,3 +44,5 @@ db.sync()
     console.log('Database is sync`d')
     app.listen(PORT, () => console.log(`Listening intently on PORT: ${PORT}`))
   })
+
+//noor is testing that stuffs working
