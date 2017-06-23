@@ -1,4 +1,44 @@
-const Sequelize = require('sequelize')
-const db = new Sequelize('postgres://localhost/tripplanner')
+const Sequelize = require('sequelize');
+const db = require('./_db');
+const Place = require('./place');
+const Hotel = require('./hotel');
+const Restaurant = require('./restaurant');
+const Activity = require('./activity');
 
-module.exports = db
+Hotel.belongsTo(Place);
+Activity.belongsTo(Place);
+Restaurant.belongsTo(Place);
+
+module.exports = db;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
